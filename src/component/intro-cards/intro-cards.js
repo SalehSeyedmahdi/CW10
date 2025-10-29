@@ -1,6 +1,7 @@
-const introCards = document.getElementById("intro-cards");
+export function IntroCards() {
+  const introCards = document.getElementById("intro-cards");
 
-introCards.innerHTML = `
+  introCards.innerHTML = `
 				<div class="bg-white rounded-xl p-5 shadow-xl flex flex-col gap-5">
 					<h3
 						class="bg-purple-500 p-10 rounded-full w-5 h-5 flex items-center justify-center"
@@ -73,3 +74,5 @@ introCards.innerHTML = `
 						consequuntur?
 					</p>
 				</div>`;
+  return introCards;
+}
